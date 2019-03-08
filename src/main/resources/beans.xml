@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="serviceSite" class="com.training.springcore.service.SiteServiceImpl" lazy-init="true">
+    <bean id="serviceSite" class="com.training.springcore.service.SiteServiceImpl" scope="prototype">
         <constructor-arg ref="serviceCaptor"/>
     </bean>
 

@@ -16,7 +16,7 @@ public class BigCorpApplication {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         System.out.println("Application startup");
 
-        SiteService siteService = context.getBean(SiteService.class);
+        SiteService siteService = context.getBean("serviceSite",SiteService.class);
         System.out.println(siteService.findById("siteA"));
 
         SiteService siteService1 = context.getBean(SiteService.class);
