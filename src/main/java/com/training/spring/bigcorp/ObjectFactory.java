@@ -5,7 +5,7 @@ import com.training.springcore.service.CaptorServiceImpl;
 import com.training.springcore.service.SiteService;
 import com.training.springcore.service.SiteServiceImpl;
 
-public class ObjectFacory {
+public class ObjectFactory {
 
     public SiteService createSiteService(){
        return new SiteServiceImpl(createCaptorService());
