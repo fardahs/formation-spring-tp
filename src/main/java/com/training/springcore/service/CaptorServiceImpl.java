@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class CaptorServiceImpl implements CaptorService{
 
+
     @Override
     public Set<Captor> findBySite(String siteId) {
         Set<Captor> captors = new HashSet<>();
