@@ -33,8 +33,6 @@ public class CaptorServiceImpl implements CaptorService{
             return captors;
         }
         captors.add(new Captor("Capteur A", PowerSource.FIXED));
-        captors.add(new Captor("Capteur A", PowerSource.SIMULATED));
-        captors.add(new Captor("Capteur A", PowerSource.REAL));
         return captors;
     }
 }
