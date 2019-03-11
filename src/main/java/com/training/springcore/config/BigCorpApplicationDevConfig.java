@@ -14,8 +14,8 @@ import java.util.Set;
 
 
 @Configuration
-@PropertySource("classpath:application-prod.properties")
-@Profile("prod")
+@PropertySource("classpath:application.properties")
+@Profile("!prod")
 public class BigCorpApplicationDevConfig {
 
     @Autowired

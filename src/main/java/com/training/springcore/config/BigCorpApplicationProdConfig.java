@@ -12,10 +12,9 @@ import org.springframework.core.env.Environment;
 import java.util.Set;
 
 
-
 @Configuration
-@PropertySource("classpath:application.properties")
-@Profile("!prod")
+@PropertySource("classpath:application-prod.properties")
+@Profile("prod")
 public class BigCorpApplicationProdConfig {
 
     @Autowired

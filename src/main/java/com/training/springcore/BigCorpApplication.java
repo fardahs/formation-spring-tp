@@ -17,7 +17,15 @@ public class BigCorpApplication {
     }
 
     public void run() {
-        ApplicationContext context = new AnnotationConfigApplicationContext(BigCorpApplicationConfig.class);
+        /* Avec la variable environnement */
+        //ApplicationContext context = new AnnotationConfigApplicationContext(BigCorpApplicationConfig.class);
+
+
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+        context.getEnvironment().setActiveProfiles("prod");
+        context.registerBean(BigCorpApplicationConfig.class);
+        context.refresh();
+
         ApplicationInfo applicationInfo = context.getBean(ApplicationInfo.class);
 
         System.out.println("==========================================================");
