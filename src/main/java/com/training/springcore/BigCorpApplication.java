@@ -2,6 +2,7 @@ package com.training.springcore;
 
 
 
+import com.training.springcore.config.BigCorpApplicationConfig;
 import com.training.springcore.model.ApplicationInfo;
 import com.training.springcore.service.SiteService;
 import org.springframework.context.ApplicationContext;
@@ -31,10 +32,6 @@ public class BigCorpApplication {
 
         SiteService siteService1 = context.getBean(SiteService.class);
         System.out.println(siteService1.findById("siteA"));
-
-
-
-
 
     }
 }

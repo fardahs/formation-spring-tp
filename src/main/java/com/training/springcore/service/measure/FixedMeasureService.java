@@ -28,8 +28,5 @@ public class FixedMeasureService implements MeasureService {
         return measures;
     }
 
-    @Override
-    public String toString() {
-        return "FixedMeasureService{";
-    }
+
 }
